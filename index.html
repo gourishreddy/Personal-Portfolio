@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f4fb7fa63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-container">
+            <nav>
+                <h1>Gourish.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#myportfolio">Portfolio</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="name-container">
+            <div class="name-box">
+                <h1>Hi I'm <span>Chandhri Gourish Reddy</span></h1>
+                <p>A passionate <span>Frontend Developer</span> crafting beautiful, functional, and user-focused <br>digital experiences.</p>
+                <a href="#myportfolio"><button class="btn-work" id="my-portfolio">My Work</button></a>
+                <a href="#contact"><button class="btn-contact" >Contact Me</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------About Section-------------------------- -->
+    <div class="about">
+        <h1 id="about">About Me</h1>
+        <div class="about-section"> 
+            <div class="clm-one">
+                <p class="about-text">
+                    I'm a passionate developer who enjoys crafting meaningful digital experiences that are clean, accessible, and user-focused. I believe in building with purpose—making design and technology work together to solve real problems.<br><br>
+                    Outside of code, I love exploring new ideas, learning continuously, and collaborating with others to create things that matter. I’m currently open to opportunities where I can grow, contribute, and learn in a real-world environment.
+                </p>
+            </div>
+            <div class="clm-two">
+                <div class="card">
+                    <div class="card-title first"><i class="fa-solid fa-code"></i> Frontend Development</div>
+                    <div class="card-desc">Building responsive, accessible interfaces that bring designs to life in the browser.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title second"><i class="fa-regular fa-object-group"></i> UI/UX Design</div>
+                    <div class="card-desc">Focused on creating intuitive, engaging user experiences with clean visual design.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title third"><i class="fa-solid fa-database"></i> Python & SQL</div>
+                    <div class="card-desc">Leveraging backend tools to handle logic, data, and efficient workflows behind the scenes.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------Portfolio section------------------------------ -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 id="myportfolio">My Portfolio</h2>
+            <p class="subtitle">Here are some of my recent projects that showcase my skills and creativity</p>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <img src="images/calculator-background.jpg" alt="Calculator">
+                <div class="card-content">
+                    <h3>Calculator</h3>
+                    <p>Responsive dark-themed calculator using HTML, CSS, and JavaScript for basic arithmetic operations.</p>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>VS Code</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://calculator-five-umber-17.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/gourishreddy/calculator"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <img src="images/sql-project.png" alt="Library management system">
+                    <div class="card-content">
+                        <h3>Library management system</h3>
+                        <p>Library management system using SQL with created database, tables (Books, Students, BorrowRecords), and relational queries for managing book lending.</p>
+                        <div class="tags">
+                            <span>SQL</span><span>My SQL</span><span>Git</span><span>GitHub</span>
+                        </div>
+                        <div class="buttons">
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a> -->
+                            <a href="https://github.com/gourishreddy/library-sql-project"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <img src="images/game.jpg" alt="Rock Paper Scissors">
+                    <div class="card-content">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>Rock, Paper, Scissors game built with HTML, CSS, and JavaScript for interactive user play against computer with score tracking.</p>
+                        <div class="tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>VS Code</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://rock-paper-scissors-three-steel.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/gourishreddy/Rock-Paper-Scissors"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card">
+                    <img src="images/Portfolio.jpeg" alt="Portfolio Website">
+                    <div class="card-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio site with smooth animations and modern design principles.</p>
+                        <div class="tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>VS Code</span>
+                        </div>
+                        <div class="buttons">
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a> -->
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------Skills--------------------------------->
+    <section class="skills-section">
+        <div class="container">
+            <h2 id="skill">Skills & Tools</h2>
+            <div class="skills-tools-grid">
+            
+            <!-- Skills Column with Percentage Bars -->
+                <div class="skills-box">
+                    <h3>Skills</h3>
+
+                    <div class="skill">
+                        <div class="skill-label">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar"><div style="width: 90%"></div></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar"><div style="width: 85%"></div></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="progress-bar"><div style="width: 60%"></div></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress-bar"><div style="width: 70%"></div></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress-bar"><div style="width: 70%"></div></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-label">
+                            <span class="skill-name">Excel</span>
+                            <span class="skill-percent">50%</span>
+                        </div>
+                        <div class="progress-bar"><div style="width: 50%"></div></div>
+                    </div>
+                </div>
+
+
+                <!-- Tools Column -->
+                <div class="tools-box">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-----------------------Education-------------------------->
+    <section class="education-section">
+        <div class="container">
+            <h2 id="education">Education & Certificates</h2>
+            <p class="subtitle">My educational background and continuous learning journey in technology</p>
+
+            <div class="education-timeline">
+
+                <!-- Row 1 -->
+                <div class="edu-item">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-content">
+                        <h3>Secondary School Certificate</h3>
+                        <p class="university">Geetha High School</p>
+                        <p class="desc">Learned to build responsive websites using HTML, CSS, JavaScript, and backend with Node.js.</p>
+                    </div>
+                    <div class="edu-year">2019</div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="edu-item">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-content">
+                        <h3>intermediate</h3>
+                        <p class="university">Geetha Junior College</p>
+                        <p class="desc">Built strong programming fundamentals using Python, covering data structures and web access.</p>
+                    </div>
+                    <div class="edu-year">2021</div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="edu-item">
+                    <div class="edu-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="edu-content">
+                        <h3>BTech Electrical & Electronic engineering</h3>
+                        <p class="university">B V Raju Institution of Technology</p>
+                        <p class="desc">Completed foundational coursework in data structures, databases, algorithms, and software engineering.</p>
+                    </div>
+                    <div class="edu-year">2021-2025</div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="edu-item">
+                    <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="edu-content">
+                        <h3>SQL Programming</h3>
+                        <p class="university">Hacker Rank</p>
+                        <p class="desc">Mastered writing SQL queries for data manipulation, joins, filtering, and reporting.</p>
+                    </div>
+                    <div class="edu-year">2025</div>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="edu-item">
+                    <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="edu-content">
+                        <h3>Python Programming</h3>
+                        <p class="university">Hacker Rank</p>
+                        <p class="desc">Learned formulas, pivot tables, charts, and functions to clean and analyze data.</p>
+                    </div>
+                    <div class="edu-year">2025</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--------------------------Contacts--------------------------------->
+    <section class="contact-section">
+        <div class="container">
+            <h2 id="contact">Get In Touch</h2>
+            <p class="subtitle">
+            I'm always open to discussing new opportunities, interesting projects, or just having a chat
+            </p>
+
+            <div class="contact-columns">
+            <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="square-box">
+                        <div class="info-icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <a href="chandrigourish@gmail.com"
+                        title="chandrigourish@gmail.com"
+                        target="_blank">chandrigourish@gmail.com</a>
+                    </div>
+
+                    <div class="square-box">
+                        <div class="info-icon-circle"><i class="fa-brands fa-linkedin"></i></div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/gourish-reddy/" title="https://www.linkedin.com/in/gourish-reddy/" 
+                        target="_blank">https://www.linkedin.com/in/gourish-reddy/</a>
+                    </div>
+
+                    <div class="square-box">
+                        <div class="info-icon-circle"><i class="fa-brands fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/gourishreddy"
+                        title="https://github.com/gourishreddy"
+                        target="_blank">https://github.com/gourishreddy"</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" id="name" placeholder="Your name" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" id="email" placeholder="your.email@example.com" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" id="subject" placeholder="What's this about?" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="message" placeholder="Tell me about your project or just say hello!" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Resume Download -->
+            <div class="resume-download">
+                <button class="download-button">👤 Download Resume</button>
+            </div>
+        </div>
+    </section>
+    <!----------------footer------------------------------>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2024 Gourish. All rights reserved. Built with HTML & CSS and JavaScript.</p>
+        </div>
+    </footer>
+<!---------------------menu sidebar-------------------------------------------->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-150px";
+        }
+    </script>
+    <!------------------------------------contact script----------------------->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const data = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            };
+
+            fetch("https://script.google.com/macros/s/AKfycbwN4OlWcibpBXExacrm3EgU6x5NbGukcqduP58iVOvwm9m_3iuXFWBPT0OaxRCKOD22Mg/exec", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: { "Content-Type": "application/json" }
+            })
+            .then(response => alert("Message sent successfully!"))
+            .catch(error => alert("Error sending message!"));
+        });
+</script>
+
+</body>
+</html>

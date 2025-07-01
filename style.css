@@ -1,0 +1,821 @@
+* {
+    /* background-color: grey; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* ---- Global Fixes ---- */
+:target {
+    scroll-margin-top: 100px; /* Keeps anchor links visible below fixed nav */
+}
+
+
+.header {
+    background-color: #eaf0ff;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.nav-container {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 2px 6px lightgray;
+    position: fixed;
+    top: 0; /* Make sure it's pinned at the top */
+    right: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above all other content */
+
+}
+
+.nav-container h1 {
+    color: #2563EB;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+nav ul li a::after {
+    
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background: #2563EB;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.name-container {
+    padding-top: 18%;
+    text-align: center;
+    
+}
+
+
+.name-container h1 {
+    font-size: 50px;
+    font-family: 'inter', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS';
+}
+
+
+
+.name-box h1 span {
+    color: #2563EB;
+    font-family: 'inter', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS';
+
+}
+
+.name-box  p {
+    padding: 20px 0px;
+    font-size: 25px;
+    color: #5a5a5a;
+}
+
+.name-box p span {
+    color: #2563EB;
+    font-weight: bold;
+}
+
+.name-box button {
+    width: 12rem;
+    height: 3rem;
+    margin: 20px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.name-box .btn-work {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+}
+
+.name-box .btn-contact {
+    border: 2px solid #2563eb ;
+    color: #2563eb;
+    background-color: white;
+    
+}
+
+.name-box .btn-contact:hover {
+    background-color: #2563EB;
+    color: white;
+    transition: 0.3s;
+
+}
+
+/*------------------------------------About Section-----------------------------------------------*/
+
+.about {
+    width: 100%;
+    height: auto;
+}
+
+.about h1 {
+    text-align: center;
+    padding-top: 88px;
+    padding-bottom: 60px;
+}
+
+.about .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Use fixed pixel gap instead of percentage */
+    justify-content: center; /* Center items when wrapped */
+}
+
+.about .about-section .clm-one,
+.about .about-section .clm-two {
+    
+    flex: 1 1 300px;
+    max-width: 650px;
+    color: #5a5a5a;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+     
+}
+
+.about .about-section .clm-one {
+    padding-left: 35px;
+    padding-top: 35px;
+}
+
+.about .about-section .clm-one .about-text {
+    text-align: justify;
+    
+}
+
+.card {
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-title.first i {
+    background-color: rgb(162, 206, 241);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.card-title.second i {
+    background-color: rgb(255, 206, 127);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.card-title.third i {
+    background-color: rgb(183, 255, 241);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.card-desc {
+    font-size: 14px;
+    color: #555;
+}
+
+/*--------------------------------------Portfolio Section -----------------------------------*/
+
+.portfolio-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+    position: relative;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #222;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tags span {
+    background: #e5e5e5;
+    color: #333;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    transition: 0.2s;
+}
+
+.buttons a:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/*--------------------------------------skills--------------------*/
+
+.skills-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.skills-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.skills-box, .tools-box {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.skills-box h3, .tools-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.skills-box ul, .tools-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-box li, .tools-box li {
+    font-size: 14px;
+    padding: 8px 0;
+    color: #555;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.skills-box li:last-child, .tools-box li:last-child {
+    border-bottom: none;
+}
+
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.skill-name {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.skill-percent {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 100%;
+    background-color: #007bff;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+/* -------------------------------------education---------------- */
+
+.education-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.education-section .subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #f9f9f9;
+    padding: 20px 25px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.edu-icon {
+    font-size: 24px;
+    margin-top: 6px;
+    color: #007bff;
+}
+
+.edu-content {
+    flex: 1;
+    text-align: left;
+}
+
+.edu-content h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+    color: #222;
+}
+
+.edu-content .university {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #555;
+}
+
+.edu-content .desc {
+    font-size: 13px;
+    color: #666;
+}
+
+.edu-year {
+    font-size: 14px;
+    font-weight: 500;
+    color: #007bff;
+    white-space: nowrap;
+    margin-left: auto;
+    align-self: center;
+}
+/* ---------------------------CONTACT------------------------------------- */
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f9fafb;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.contact-section .subtitle {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.contact-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.square-box {
+    width: 240px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.square-box:hover {
+    transform: translateY(-4px);
+}
+
+.info-icon-circle {
+    width: 50px;
+    height: 50px;
+    background: #e0ecff;
+    color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 10px;
+}
+
+.square-box h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #111827;
+}
+
+.square-box a {
+    display: block;
+    color: #4b5563;
+    font-size: 14px;
+    text-decoration: none;
+
+    white-space: nowrap;         /* Prevent line break */
+    overflow: hidden;            /* Hide overflow */
+    text-overflow: ellipsis;     /* Show ellipsis (...) */
+    max-width: 100%;             /* Keep inside container */
+}
+
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-form h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: white;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1e40af;
+}
+
+/* Resume Download */
+.resume-download {
+    margin-top: 50px;
+}
+
+.download-button {
+    background: transparent;
+    color: #2563eb;
+    border: 1.5px solid #2563eb;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.download-button:hover {
+    background: #2563eb;
+    color: white;
+}
+/* --------------------------footer section------------------------------ */
+.footer {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer h3,
+.footer h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #93c5fd;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #60a5fa;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin-right: 12px;
+    color: #93c5fd;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #60a5fa;
+}
+
+.footer hr {
+    border-color: #1e293b;
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+}
+/*--------------------------------for small screen------------------------*/
+.nav-container nav .fa-solid {
+    display: none;
+}
+
+@media only screen and  (max-width: 600px) {
+    .nav-container nav .fa-solid {
+    display: block;
+    }
+
+    .nav-container nav ul{
+        background: lightskyblue;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding: 50px 5px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .nav-container nav ul li {
+        display: block;
+        margin: 25px;
+
+    }
+
+    .nav-container nav ul .fa-solid {
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .name-container h1 {
+    font-size: 40px;
+    font-family: 'inter', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS';
+    padding-top: 150px;
+    }
+
+    .name-box h1 span {
+    color: #2563EB;
+    font-family: 'inter', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS';
+
+    } 
+    
+    .name-box p {
+        text-align: center;
+        padding: 50px 35px;
+        font-size: 15px;
+    }
+
+    .name-box button {
+        width: 9rem;
+    }
+
+    .about .about-section .clm-one {
+        font-size: 16px;
+        padding-right: 25px;
+    }
+
+    .about .about-section .clm-two {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    #about h1 {
+        padding-bottom: 10px;
+    }
+
+    .about .about-section .clm-one {
+        padding-top: 5px;
+    }
+
+    
+}
+
